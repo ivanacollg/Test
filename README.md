@@ -30,4 +30,7 @@ git config --list
 
 # Install OpenCV
 
+# Intsall Sportify
+
+
 
