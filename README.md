@@ -23,6 +23,8 @@ git --version
 git config --global user.email "youremail@yourdomain.com"
 git config --global user.email "youremail@yourdomain.com"
 git config --list
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+Enter ls -al ~/.ssh to see if existing SSH keys are present.
 
 # Install Python
 sudo apt-get -y install python3-dev python3-pip 
@@ -78,25 +80,25 @@ git clone https://github.com/opencv/opencv.git
 	      -D WITH_OPENGL=ON \
 	      -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 	      -D BUILD_EXAMPLES=ON \
-	      -D WITH_CUDA=ON \
-	      -D WITH_CUBLAS=ON \
-	      -D CUDA_GENERATION=Auto \
-	      -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" \
-	      -D ENABLE_FAST_MATH=1 \
-	      -D CUDA_FAST_MATH=1 \
-	      -D WITH_NVCUVID=1 \
-	      -D WITH_CUFFT=ON \
 	      -D WITH_EIGEN=ON \
-	      -D WITH_IPP=ON \
-	      -D BUILD_opencv_cudacodec=OFF \
-	      -D CMAKE_C_COMPILER=gcc-6 \
-	      -D CMAKE_CXX_COMPILER=g++-6 \
 	      -D OPENCV_GENERATE_PKGCONFIG=ON ..
 
 	make -j($nproc)
 	sudo make install 
 	sudo ldconfig
 
+# Intall ROS Melodic
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-melodic-desktop-full
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+# Install Terminator 
+sudo apt-get install terminator
 
 # Install VSCode
 
