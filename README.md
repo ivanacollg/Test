@@ -1,6 +1,11 @@
 # Install Ubuntu
 Creat ubuntu image on flashdrive and start up using that USB drive
 
+# Creatng a bootlable USB using Windoes
+Download Ubuntu image .iso file 
+Use Rufus to create Bootle USB
+https://www.maketecheasier.com/use-rufus-create-bootable-flash-drive/
+
 # Install gcc 
 sudo apt update
 sudo apt install build-essential
