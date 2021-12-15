@@ -26,7 +26,7 @@ nvcc -V
 sudo apt install git
 git --version
 git config --global user.email "youremail@yourdomain.com"
-git config --global user.email "youremail@yourdomain.com"
+git config --global user.name "username"
 git config --list
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 Enter ls -al ~/.ssh to see if existing SSH keys are present.
