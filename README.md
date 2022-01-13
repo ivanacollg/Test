@@ -7,22 +7,29 @@ Use Rufus to create Bootle USB
 https://www.maketecheasier.com/use-rufus-create-bootable-flash-drive/
 
 # Install gcc 
+```
 sudo apt update
 sudo apt install build-essential
 gcc --version
 sudo apt install cmake
+```
 
 # Install Nvidia drivers
 Download drivers from Nvidia wesite using computer specs
 sudo sh NVIDIA....run
 
 # Install CUDA 
+```
 nvidia-smi
+```
 
 # Install CuDNN
+```
 nvcc -V
+```
 
 # Install Git
+```
 sudo apt install git
 git --version
 git config --global user.email "youremail@yourdomain.com"
@@ -30,15 +37,19 @@ git config --global user.name "username"
 git config --list
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 Enter ls -al ~/.ssh to see if existing SSH keys are present.
+```
 
 # Install Python
+```
 sudo apt-get -y install python3-dev python3-pip 
 pip3 --version
 sudo apt install python-pip
 pip --version
 sudo pip install numpy scipy matplotlib scikit-image scikit-learn ipython
+```
 
 # Install OpenCV
+```
 sudo apt-get -y install libjpeg8-dev libjasper1 libpng-dev
 sudo apt-get -y install libtiff-dev
 sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev
@@ -53,6 +64,7 @@ sudo apt-get -y install x264 v4l-utils
 sudo apt-get -y install libprotobuf-dev protobuf-compiler
 sudo apt-get -y install libgoogle-glog-dev libgflags-dev
 sudo apt-get -y install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
+
 
 git clone https://github.com/opencv/opencv.git
 	cd opencv 
@@ -91,8 +103,10 @@ git clone https://github.com/opencv/opencv.git
 	make -j($nproc)
 	sudo make install 
 	sudo ldconfig
+```
 
 # Intall ROS Melodic
+```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
@@ -101,9 +115,12 @@ sudo apt install ros-melodic-desktop-full
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
 
 # Install Terminator 
+```
 sudo apt-get install terminator
+```
 
 # Install VSCode
 
