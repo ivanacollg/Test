@@ -124,9 +124,25 @@ sudo apt-get install terminator
 
 # Install VSCode
 
-# Install OpenCV
-
 # Intsall Sportify
+
+# Setting a Static ethernet IP address for Jetson 
+- Desktop computer:
+** Create new ethernet connection and in IP4 setting enable share with other devices
+- Jetson:
+** Most common ethernet connection name is eth0
+** Create file etc/network/interfaces.d/eth0 and insert:
+```
+auto eth0
+iface eth0 inet static
+	address 10.42.0.8 # IP address you want to assigne the Jetson
+	netmask 255.255.255.0
+	broadcast 10.42.0.255
+	gateway 10.42.0.1 # IP address from your desktop computer (Make sure bothe computers have same subnet)
+```
+** Reboot Jetson
+
+
 
 
 
