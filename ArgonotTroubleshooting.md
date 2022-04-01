@@ -24,3 +24,6 @@ change for #include "opencv2/highgui/highgui.hpp"
 - ‘CV_IMWRITE_JPEG_QUALITY’ was not declared in this scope
   params[0] = CV_IMWRITE_JPEG_QUALITY;
 change for cv::IMWRITE_JPEG_QUALITY
+
+# BRUCE INSTALL
+https://github.com/borglab/gtsam
