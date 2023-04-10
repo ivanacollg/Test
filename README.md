@@ -39,7 +39,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking
 Enter ls -al ~/.ssh to see if existing SSH keys are present.
 ```
 
-# Instal large file Git
+## Install large file Git
 ```
 sudo apt update
 sudo apt install tar gzip build-essential
@@ -47,6 +47,11 @@ sudo apt install tar gzip build-essential
 git lfs install
 git lfs track "*.psd"
 git add .gitattributes
+```
+## Git Submodule
+```
+git submodule init
+git submodule update
 ```
 
 # Install Python
