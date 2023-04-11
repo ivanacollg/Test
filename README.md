@@ -40,9 +40,12 @@ Enter ls -al ~/.ssh to see if existing SSH keys are present.
 ```
 
 ## Install large file Git
+Download https://git-lfs.com/
 ```
 sudo apt update
 sudo apt install tar gzip build-essential
+tar -xvzf git-lfs-linux-amd64-v3.3.0.tar.gz 
+cd git- m... 
 ./install
 git lfs install
 git lfs track "*.psd"
