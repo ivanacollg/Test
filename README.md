@@ -134,6 +134,16 @@ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
+# Intall ROS2 Jazzy
+Virtual Environment:
+```
+	python3 -m venv <environment_name>
+	source <environment_name>/bin/activate
+```
+Add virtual environment to bashrc file:
+```
+	source ~/<environment_name>/bin/activate
+```
 
 # Install Terminator 
 ```
