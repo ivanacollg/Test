@@ -137,6 +137,9 @@ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator pyt
 # Intall ROS2 Jazzy
 Virtual Environment:
 ```
+	python3 -m venv ~/ros2_venv
+	source ~/ros2_venv/bin/activate
+
 	python3 -m venv <environment_name>
 	source <environment_name>/bin/activate
 ```
